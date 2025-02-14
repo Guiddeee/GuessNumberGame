@@ -5,7 +5,7 @@ public class main {
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Number Guessing Game!\r\n"
 				+ "I'm thinking of a number between 1 and 100.\r\n"
-				+ "You have 5 chances to guess the correct number.");
+				+ "You have many chances to guess the correct number.");
 		System.out.println("\r\n");
 		System.out.println("Please select the difficulty level:\r\n"
 				+ "1. Easy (10 chances)\r\n"
@@ -23,7 +23,6 @@ public class main {
 		}
 		int min = 1,max = 100;
 		int answerNumber = (min + (int)(Math.random() * ((max - min) + 1)));
-		System.out.println(answerNumber);
 		int attempts = 0;
 		boolean isWin = false;
 		while(attempts < chances ) {
@@ -44,7 +43,7 @@ public class main {
 		if(isWin) {
 			System.out.println("Congratulations! You guessed the correct number in "+ attempts +" attempts.");
 		}else {
-			System.out.println("You are not lucky! You guessed  in "+ attempts +" attempts. out of your chances!");
+			System.out.println("You are not lucky! You guessed in "+ attempts +" attempts. out of your chances!");
 		}
 	}
 
